@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temp converter</title>
+    <script src="https://kit.fontawesome.com/4eefd026b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+            <h1>Temperature Converter</h1>
+
+    <div class="container">
+        <div class="image">
+           <div>
+            <i class="fa-solid fa-temperature-arrow-up"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-temperature-arrow-down"></i>
+            </div>
+           
+        </div>
+        <div class="window">
+            <div  id="contain">
+                <form id="calcTemp" onsubmit="calculateTemp(); return false" >
+                    
+                    <label>Enter the Temperature to convert</label><br>
+                    <input type="number" name="temp" id="temp" required>
+                    <select name="temp_d" id="temp_d">
+                        <option value="cel">&#176;Celsius</option>
+                        <option value="fah">&#176;Fahrenheit</option>
+                    </select><br>
+                    <div class="btn">
+                        <input type="submit" name="tempr" id="submit" value="Converter"><br>
+                        <span id="result"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

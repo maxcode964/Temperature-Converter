@@ -1,0 +1,128 @@
+h1{
+    background-color: #053b76;
+    margin-top: 0%;
+    padding: 2rem;
+    text-align: center;
+    color: #04041c;
+    margin-bottom: 0%;
+}
+.container{
+    display:flex;
+
+}
+
+.img{
+    display: inline;
+}
+.image{
+    height:80vh;
+    width:30%;
+    background-color: #A7ECEE;      /*#A7ECEE #DD58D6*/
+}
+.window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80%;
+    background-color: #08adef;
+}
+#contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh;
+    width:70%;
+    background-color: #fabe0b;          /*#FFEEBB #FFE79B*/
+    border-radius: 25px;
+}
+label{
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#temp{
+    height:2rem;
+    width: 65%;
+    border:solid black;                     /*black*/
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+#temp_d{
+    height:2.1rem;
+    width:31%;
+    border-radius:10px ;
+    font-size: 20px;
+}
+#submit{
+    height:2.5rem;
+    width:30%;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color:aquamarine;                /*aquamarine #9AC5F4*/
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+span{
+    font-size: 2rem;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+i{  
+    color:indigo;                       /*purple indigo*/
+    font-size: 10rem;
+}
+.icons{
+    display:none;
+}
+
+@media screen and (max-width:600px)
+{
+    h1{
+        font-size:28px;
+        text-align: center;
+        padding:20px;
+    }
+
+    .image{
+        height:0%;
+        width:0%;
+    }
+    i{
+        font-size:0rem;
+    }
+    .window{
+        height:87vh;
+        width:100%;
+    }
+    #contain{
+        width:90%;
+        height:80vh;
+    }
+    label{
+        font-size:30px;
+        text-align: center;
+    }
+    #submit{
+        width:40%;
+    }
+    #temp_d{
+        font-size: 15px;
+    }
+    .icons{
+        display: block;
+        font-size:4rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
